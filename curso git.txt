@@ -207,3 +207,7 @@ Se pierde la referencia, y HEAD apunta al commit activo
 Si haces un checkout se pierde la referencia a los commits que se hayan hecho(aunque los commits no se pierden, habría que referenciarlos de nuevo)
 Cuando tienes un detached HEAD hay que añdirle una etiqueta si se desean guardar(tag o branch)
 cuando se hace un checkout de una rama remota se crea un detached HEAD
+
+No es realmente necesario crear una rama. Si vas a otra rama, puedes hacer un merge de la referencia del commit
+Your branch is behind 'origin/master' by 5 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
