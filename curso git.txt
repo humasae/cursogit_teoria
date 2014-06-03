@@ -209,5 +209,7 @@ Cuando tienes un detached HEAD hay que añdirle una etiqueta si se desean guardar
 cuando se hace un checkout de una rama remota se crea un detached HEAD
 
 No es realmente necesario crear una rama. Si vas a otra rama, puedes hacer un merge de la referencia del commit
-Your branch is behind 'origin/master' by 5 commits, and can be fast-forwarded.
+- git checkout master
+- Your branch is behind 'origin/master' by 5 commits, and can be fast-forwarded.
   (use "git pull" to update your local branch)
+- git merge b1c35ef
