@@ -22,3 +22,60 @@
    22  vim /c/Users/thinktic/Documents/gitignore_global.txt 
    23  cat /c/Users/thinktic/Documents/gitignore_global.txt >> curso\ git.txt 
    24  history > historial.txt 
+   25  ls -la
+   26  touch .gitignore
+   27  cd ..
+   28  ls -la
+   29  cd template/
+   30  mkdir cache
+   31  echo 'hola que tal' >> cache/my_file.txt
+   32  mkdir config
+   33  echo 'pasword:123\nuser:usuario' >> config/keys.yml
+   34  echo 'databases' >> config/databases.yml
+   35  echo '123456' >> config/databases_ref.yml
+   36  git commit -am "pruebas de gitignore"
+   37  git add --all
+   38  git commit -am "pruebas de gitignore 2"
+   39  git branch ignorando_ficheros
+   40  git checkout ignorando_ficheros 
+   41  git commit -am "paginas web agregadas a la teoria"
+   42  mkdir.exe ../cursogit
+   43  mv curso\ git.txt ../cursogit/
+   44  mv historial.txt ../cursogit/
+   45  git commit -am"quito los ficheros de teoria"
+   46  git checkout master
+   47  git merge ignorando_ficheros 
+   48  git branch -d rama_para_reset 
+   49  git branch -d ignorando_ficheros 
+   50  git fetch origin 
+   51  git push 
+   52  git fetch
+   53  git fetch -u origin 
+   54  git fetch -u origin master
+   55  git merge origin/master 
+   56  git commit -am "nuevos commits en local"
+   57  git log --decorate --all --graph
+   58  git log --graph --oneline --decorate --all
+   59  git branch 
+   60  git branch -v
+   61  git branch -v >> ../cursogit/curso\ git.txt
+   62  git branch -v
+   63  git fetch -u origin master
+   64  git push -u origin master 
+   65  git commit -am"push sin fetch"
+   66  git push -u origin master 
+   67  git fetch -u origin master
+   68  git status
+   69  git branch 
+   70  git branch -v
+   71  git fetch -u origin master:master 
+   72  git fetch
+   73  git commit -am "mas cambios tras la bifurcacion con origin"
+   74  git merge -u origin/master 
+   75  git merge origin/master 
+   76  git commit -am "ueee"
+   77  git push -u origin master 
+   78  git reset --hard 51b1cca
+   79  git checkout origin/master 
+   80  cat .git/HEAD 
+   81  history > ../cursogit/historial.txt 
