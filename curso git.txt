@@ -180,3 +180,18 @@ usa 2 protocolos distintos
 	-ssh
 	-https
 
+
+Nuevo tipo de etiqueta
+ -etiqueta remota
+
+ la única diferencia entre el repositorio remoto y el local, es que en el remoto no existe el área de trabajo
+
+ En el equipo local se guardan las referencias remotas, para saber en qué estado se han dejado las referencias. Al volver a comunicarse de nuevo con el repositorio remoto hay que volver a preguntar en qué estado se encuentran las referencias
+
+ 4)mis últimas noticias son que en github la etiqueta 1 esta aquí
+
+
+ enviar al remoto: git pull
+ recibir noticias del repositorio remoto: git fetch
+ - git pull: hace un fetch y un merge (¡¡¡¡¡¡NO USAR!!!!!!)
+
