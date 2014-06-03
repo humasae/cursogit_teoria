@@ -195,3 +195,8 @@ Nuevo tipo de etiqueta
  recibir noticias del repositorio remoto: git fetch
  - git pull: hace un fetch y un merge (¡¡¡¡¡¡NO USAR!!!!!!)
 
+
+git log --graph --oneline --decorate --all
+
+git branch -v
+* master 51b1cca [ahead 1] nuevos commits en local
