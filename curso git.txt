@@ -1,0 +1,182 @@
+GIT:
+
+1)Cosas que hace git
+- realizar fotos del código
+- administrar estructura de datos
+- gestionar punteros
+
+
+COMMIT:
+
+graba:
+- nombre
+- email
+- fecha
+- codigo fuente
+- puntero referencia al commit anterior
+- mensaje del commit
+
+
+--> esto genera una firma única
+
+es una lista 'simplemente' enlazada --> se sabe cuál es el padre, pero no cuáles son los hijos
+
+
+
+
+
+-área de trabajo: carpeta donde están los ficheros
+-repositorio de git (en local)
+-existe un área intermedia que es de lo que de hace la foto
+
+
+Commit: b93e9a4c1ab97035f3719a8ab755178507cdaf25 [b93e9a4]
+Parents: 
+Author: humasae <humasae@gmail.com>
+Date: lunes, 02 de junio de 2014 16:55:19
+Commit Date: lunes, 02 de junio de 2014 16:58:53
+Labels: HEAD, master
+version inicial entregada marzo 2014.
+
+
+
+git tag nombre_de_la_etiqueta
+
+
+LAS RAMAS Y LAS ETIQUETAS SON LA MISMA COSA
+
+Una rama es una etiqueta, la única diferencia es que la rama se puede mover entre commits
+Es un fichero de texto plano que contiene una referencia.
+
+Las ramas NO son equivalentes a railes de una vía.
+
+Son punteros
+
+
+Los puntos de entrada son las referencias(etiquetas, ramas, etc.)
+
+cuando borras una rama (referencia tipo branch) se borra su reflog --> hay que tener cuidado con eso
+
+para ver el histórico de commits:
+git reflog
+git reflog master
+git reflog nombre_rama
+
+
+
+2)Git no borra nada
+Hasta que pasa el colector de bvasura...2 semanas
+
+3)Merge (para Rebase, lo mismo):
+me voy a A y cogo B (desde la rama de producción se hace un merge de la rama en desarrollo)
+
+
+Merge- fast forward
+En git solo se puede bajar (hijo->padre)
+si el checkout entre ramas va en línea recta, el merg se resuelve con 1 fast-forward
+si hay que bajar y luego subir ya no funciona de esa manera (porque en git no se puede subir - padre<-hijo)
+
+
+
+Se pueden borrar tranquilamente las ramas que se han unido a la principal, porque ya está la referencia de la otra rama como punto de entrada
+
+//<<<<<<< HEAD
+
+
+
+commit de master!!!
+//=======
+1er commit t4
+2o commit t4
+
+
+la bifurcación no aparece porque haya 2 ramas, sino porque hay 2 commits con el mismo padre
+
+La estructura de datos ya no es una lista enlazada
+//>>>>>>> ticket4
+
+
+
+git reset
+
+sirve para recuperar ficheros, para ir a una 'foto' en concreto --> git reset mueve punteros (mueve referencias de tipo branch, los tag hay que borrarlos y volverlos a crear)
+
+Por contra, checkout CAMBIA la rama activa. (MOVER LA RAMA<--> CAMBIAR DE RAMA)
+
+
+GIT CHECKOUT FICHERO REFERENCIA --> Trae un fichero de otra referencia a la rama activa (se puede hacer recursivo para traer un directorio)
+git checkout nombre_rama --> limpia el área de trabajo y pone la última foto de la rama solicitada
+
+git checkout nombre_fichero  --> ignora los cambios de ese fichero
+
+
+thinktic@pcac13 ~/Desktop/template (master)
+$ git reset --hard fe80270
+HEAD is now at fe80270 historial limpio
+
+ - git reset --hard : mueve la rama y LIMPIA el área de trabajo --> se pierden las modificaciones sobre las que no se ha hecho commit, así como los commits entre la rama en la que estábamos y a la que nos movemos(aún se puede recuperar desde el .git)
+ - git reset --mixed : todos los commits que se han realizado entre la foto actual y a la qe nos vamos a mover, los comprime en uno solo y los mantiene en el área de trabajo una vez que ha movido la referencia(rama)
+
+
+
+IMPORTANTE
+no poner el mismo nombre a una etiqueta y a una rama, da un error de ambigüedad si están situadas en diferentes commits
+
+
+IGNORAR FICHEROS
+1) .gitignore_global.txt
+C:\Users\thinktic\Documents\gitignore_global.txt
+
+
+#ignore thumbnails created by windows
+Thumbs.db
+#Ignore files build by Visual Studio
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.dll
+*.lib
+*.sbr
+
+
+2) .gitignore
+
+!*.obj  --> para decirle que no ignore unos ficheros que por defecto se ignoran en el global
+
+
+
+aprendegit.com
+gitignore.io --> genera un fichero bas para ignorar ficheros en función de en qué lenguaje programas
+
+
+
+git mantiene una base de datos que se llama index, que es la que controla todos lo ficheros que está monitorizando.
+si se pone un fichero en .gitignore antes de crearlo, git lo ignora
+pero si existe el fichero y luego se excluye en .gitignore, hay que indicárselo explicitamente: git rm --cached <file> 
+
+
+git filter branch --> 'reescribe' la historia de los commits, por si es necesario quitar un fichero de algún commit (por ejemplo, se subió un fichero con claves susceptibles)
+|
+|->existe otro comando mas rápido y potente para hacer lo mismo
+
+
+
+SERVIDOR DE GIT
+usa 2 protocolos distintos
+	-ssh
+	-https
+

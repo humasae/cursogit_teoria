@@ -1,0 +1,24 @@
+    1  git reset --hard fe80270
+    2  git commit -am "mas teoria"
+    3  git coomit -am "diferencias entre git reset"
+    4  git commit -am "diferencias entre git reset"
+    5  git coomit -am "diferencias entre git reset 2"
+    6  git commit -am "diferencias entre git reset 2"
+    7  git reset --mixed a342408
+    8  git status 
+    9  git reflog master
+   10  git checkout 085e8ab
+   11  git stash 
+   12  git checkout 085e8ab
+   13  git stash 
+   14  git status 
+   15  git add --all
+   16  git status 
+   17  git stash 
+   18  git checkout 085e8ab
+   19  git config 
+   20  git config core.excludesfile 
+   21  git config core.excludesfile >> curso\ git.txt
+   22  vim /c/Users/thinktic/Documents/gitignore_global.txt 
+   23  cat /c/Users/thinktic/Documents/gitignore_global.txt >> curso\ git.txt 
+   24  history > historial.txt 
