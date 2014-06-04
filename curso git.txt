@@ -233,3 +233,16 @@ git checkout index ?? (se pueden sacar varios ficheros el suyo, el mío, la mezcl
 
 
 Existe en git una herramienta para gestionar módulos (submódulos) -> no es la mejor herramienta para gestionar dependencias
+
+
+google:
+git-branch man
+https://www.kernel.org/pub/software/scm/git/docs/git-branch.html
+
+
+git reset
+--mixed -> deja las cosas en el área de trabajo
+--soft -> deja las cosas en el 'limbo'
+
+ver artículo: git reset demystified: http://git-scm.com/blog/2011/07/11/reset.html
+
