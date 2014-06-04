@@ -269,6 +269,9 @@ me traigo los cambios a MI rama (mi rama sube por encima de develop) (NO con Mer
 voy a develop y hago MERGE de mi rama
 hago PUSH
 
+
+cuando estoy en mi rama local, hay cambios en develop, y no he hecho push, es candidata de rebase
+
 pull-request
 flujo de trabajo para que alguien que no es el dueño del repositorio pueda destruirlo
 
