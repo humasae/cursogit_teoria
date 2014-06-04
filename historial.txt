@@ -79,3 +79,35 @@
    79  git checkout origin/master 
    80  cat .git/HEAD 
    81  history > ../cursogit/historial.txt 
+
+
+    1  git fetch
+    2  git checkout feature_hugo_1 
+    3  git fetch
+    4  git merge prod_2 
+    5  git commit -am "agregada nueva pagina y su enlace"
+    6  git branch -a
+    7  git fetch
+    8  git branch -a
+    9  git log 
+   10  history | grep log
+   11  git log --graph --oneline --decorate --all
+   12  git fetch
+   13  git log --graph --oneline --decorate --all
+   14  q
+   15  git fetch
+   16  git log --graph --oneline --decorate --all
+   17  git branch -a
+   18  git log --graph --oneline --decorate --all
+   19  git branch developer -u origin/developer 
+   20  git branch -u origin/developer developer
+   21  git branch --track  developer origin/developer 
+   22  git checkout developer 
+   23  git merge feature_hugo_1 
+   24  git add --all
+   25  git add enlacenuevo.html
+   26  history >> ../../cursogit/historial.txt 
+
+
+
+   

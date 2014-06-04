@@ -213,3 +213,23 @@ No es realmente necesario crear una rama. Si vas a otra rama, puedes hacer un me
 - Your branch is behind 'origin/master' by 5 commits, and can be fast-forwarded.
   (use "git pull" to update your local branch)
 - git merge b1c35ef
+
+
+
+
+
+git reset --hard HEAD^
+(retroceder 1 posicion hacia atras)
+git reset --hard HEAD^^
+git reset --hard HEAD^2
+
+
+a la hora de resolver conflictos se puede decir que prevalezcan los cambios de uno mismo o del otro
+
+git checkout --theirs nombre_del_fichero
+git checkout --ours nombre_del_fichero
+
+git checkout index ?? (se pueden sacar varios ficheros el suyo, el mío, la mezcla de ambos y el ancestro común)
+
+
+Existe en git una herramienta para gestionar módulos (submódulos) -> no es la mejor herramienta para gestionar dependencias
