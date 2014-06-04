@@ -241,8 +241,33 @@ https://www.kernel.org/pub/software/scm/git/docs/git-branch.html
 
 
 git reset
---mixed -> deja las cosas en el área de trabajo
---soft -> deja las cosas en el 'limbo'
+--mixed -> deja las cosas en el área de trabajo (si se va a hacer un commit hay que hacer add)
+--soft -> deja las cosas en el 'limbo' (no es necesario hacer add)
 
 ver artículo: git reset demystified: http://git-scm.com/blog/2011/07/11/reset.html
 
+
+rebase
+generar los commits de una manera distinta para dejar limpio el repositorio
+reduce el nº de merge-commits que existen en el repositorio
+concretamente aquellos commits provenientes de los merges que son para ponerse al día
+
+la filosofía es la misma que el merge:
+me voy a A y cojo B (se mueve la referncia A, por encima de B)
+
+es muy importante el orden, especialmente en equipo!!!!
+
+se usa cuando una de las ramas ha tenido commits, y la otra rama, ninguno
+se cambia el padre de la rama que no se mueve (se genera un nuevo commit, no mueve los commits de sitio)
+
+
+
+
+pull-request
+flujo de trabajo para que laguien que no es el dueño del repositorio pueda destruirlo
+
+
+
+RECOLECTOR DE BASURA
+1.- destruye los commits sin referencia
+2.- empaquetar el sitema de ficheros del repositorio local (.git) --> para no duplicar el tamaño del repositorio cada vez que se hace un commit

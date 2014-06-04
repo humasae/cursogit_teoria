@@ -1,3 +1,51 @@
+    1  ls
+    2  ls -la
+    3  git commit -am "cambios fichero de teoria"
+    4  git branch -D master
+    5  git reflog 
+    6  git --version 
+    7  git reflog master
+    8  git reflog ref1
+    9  git commit -am "mas cambios en toeria"
+    10  git branch 
+    11  git checkout master
+    12  git branch ticket3
+    13  git checkout ticket3 
+    14  git commit -am"2 reglas mas de git"
+    15  git commit -am"he numerado las reglas"
+    16  git checkout master 
+    17  git merge ticket3 
+    18  git commit -am"mas cambios"
+    19  git branch -d ticket3 
+    20  git branch ticket4
+    21  git checkout ticket4 
+    22  git commit -am"1er commit t4"
+    23  git commit -am"2o commit t4"
+    24  git checkout master 
+    25  git commit -am"commit de master"
+    26  git checkout ticket4 
+    27  git commit -am"mas commit"
+    28  git checkout master 
+    29  git merge ticket4 
+    30  git commit -am "yaaaaaa"
+    31  git checkout ticket4 
+    32  git branch nueva_rama
+    33  git checkout master 
+    34  git branch -d nueva_rama 
+    35  git branch -d ticket4 
+    36  git branch ticket5
+    37  git checkout ticket5 
+    38  git commit -am"cambio teoria"
+    39  git checkout master
+    40  git branch bug
+    41  git checkout bug 
+    42  git commit -am"cambio en estilos para bug"
+    43  git checkout ticket5 
+    44  history 
+    45  history >> histrial.txt
+
+
+
     1  git reset --hard fe80270
     2  git commit -am "mas teoria"
     3  git coomit -am "diferencias entre git reset"
@@ -110,4 +158,4 @@
 
 
 
-   
+
