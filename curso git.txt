@@ -280,3 +280,7 @@ flujo de trabajo para que alguien que no es el dueño del repositorio pueda destr
 RECOLECTOR DE BASURA
 1.- destruye los commits sin referencia
 2.- empaquetar el sitema de ficheros del repositorio local (.git) --> para no duplicar el tamaño del repositorio cada vez que se hace un commit
+
+
+
+fozar un merge-commit (push -f ??) --> mejor no usar, pero puede aportar información de los commits
