@@ -260,11 +260,17 @@ es muy importante el orden, especialmente en equipo!!!!
 se usa cuando una de las ramas ha tenido commits, y la otra rama, ninguno
 se cambia el padre de la rama que no se mueve (se genera un nuevo commit, no mueve los commits de sitio)
 
+IMPORTANTE: HACER EL REBASE ANTES DE HACER PUSH(crea 2 referencias iguales en 2 sitios diferentes origin/rama_rebase y rama_rebase local) --> cuando otra persona del equipo hace un fetch se lía parda, sobre todo si tiene commits sin subir, porque la rama que se ha hecho rebase, la va a tener duplicada(donde estaba antes, y donde la ha puesto el rebase)(él debe hacer otro rebase)
 
-
+FLUJO:
+estoy en mi rama
+hago fetch y miro develop
+me traigo los cambios a MI rama (mi rama sube por encima de develop) (NO con Merge, con REBASE)
+voy a develop y hago MERGE de mi rama
+hago PUSH
 
 pull-request
-flujo de trabajo para que laguien que no es el dueño del repositorio pueda destruirlo
+flujo de trabajo para que alguien que no es el dueño del repositorio pueda destruirlo
 
 
 
