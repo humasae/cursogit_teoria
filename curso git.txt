@@ -274,6 +274,12 @@ cuando estoy en mi rama local, hay cambios en develop, y no he hecho push, es ca
 
 pull-request
 flujo de trabajo para que alguien que no es el dueño del repositorio pueda destruirlo
+- clonar un repositorio
+- hacer un fork
+- cambias lo que sea
+- haces un pull request
+- se provee de una interfaz web para validar cambios por ambas partes
+- se hace el merge cuando todo está ok
 
 
 

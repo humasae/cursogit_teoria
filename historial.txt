@@ -159,3 +159,100 @@
 
 
 
+    1  git fetch
+    2  git checkout feature_hugo_1 
+    3  git fetch
+    4  git merge prod_2 
+    5  git commit -am "agregada nueva pagina y su enlace"
+    6  git branch -a
+    7  git fetch
+    8  git branch -a
+    9  git log 
+   10  history | grep log
+   11  git log --graph --oneline --decorate --all
+   12  git fetch
+   13  git log --graph --oneline --decorate --all
+   14  q
+   15  git fetch
+   16  git log --graph --oneline --decorate --all
+   17  git branch -a
+   18  git log --graph --oneline --decorate --all
+   19  git branch developer -u origin/developer 
+   20  git branch -u origin/developer developer
+   21  git branch --track  developer origin/developer 
+   22  git checkout developer 
+   23  git merge feature_hugo_1 
+   24  git add --all
+   25  git add enlacenuevo.html
+   26  history >> ../../cursogit/historial.txt 
+   27  git status
+   28  git merge --abort
+   29  git checkout feature_hugo_1 
+   30  git add enlacenuevo.html
+   31  git commit -am "agregado nuevo fichero"
+   32  git fetch
+   33  git log --graph --oneline --decorate --all
+   34  git checkout developer 
+   35  git merge feature_hugo_1 
+   36  git status
+   37  git commit -am "conflicto resuelto en index pedropa-enlacenuevo"
+   38  git fetch
+   39  git log --graph --oneline --decorate --all
+   40  git push -u origin developer 
+   41  git branch 
+   42  git log --graph --oneline --decorate --all
+   43  git log --graph --oneline --decorate
+   44  git fetchlog --graph --oneline --decorate
+   45  git branch -a
+   46  git checkout feature_hugo_1 
+   47  git merge developer 
+   48  cp enlacenuevo.html enlacenuevo2.html 
+   49  git add enlacenuevo2.html
+   50  git fetch 
+   51  git log --graph --oneline --decorate --all
+   52  git rebase develop
+   53  git commit -am "agregada segunda pagina igual"
+   54  git fetch
+   55  git fetch
+   56  git fetch --prune 
+   57  git rebase developer 
+   58  git merge developer 
+   59  git checkout developer 
+   60  git merge feature_hugo_1 
+   61  git push -u origin developer 
+   62  cp enlacenuevo.t
+   63  cp enlacenuevo.html enlacenuevo3.html
+   64  git add enlacenuevo3.html
+   65  git commit -am "cambios en enlace 3"
+   66  git checkout feature_hugo_1 
+   67  git merge developer 
+   68  git fetch 
+   69  git fetch
+   70  git rebase origin/developer 
+   71  git checkout developer 
+   72  git merge feature_hugo_1 
+   73  git rebase feature_hugo_1 
+   74  git fetch
+   75  git push -u origin developer 
+   76  git fetch 
+   77  git fetch 
+   78  git branch -a
+   79  cd ..
+   80  cd ..
+   81  git clone https://github.com/humasae/fork
+   82  cd fork/
+   83  git branch feature_hugo
+   84  git checkout feature_hugo 
+   85  ls -la
+   86  ls doc
+   87  ls public/
+   88  git fetch
+   89  echo "prueba" >> public/prueba_folk.txt
+   90  git commit -am "prueba de pull request"
+   91  git add public/prueba_folk.txt
+   92  git commit -am "prueba de pull request"
+   93  git push -u origin feature_hugo 
+   94  echo "dijheiudheiudhe odijeoidjieojd doijeodije" >> public/prueba_folk.txt 
+   95  git commit -am "prueba 2"
+   96  git push -u origin feature_hugo 
+   97  history >> ../cursogit/historial.txt 
